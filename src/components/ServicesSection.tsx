@@ -32,7 +32,7 @@ export function ServicesSection() {
           <div className="inline-block mb-5 px-3 py-1 rounded-sm border border-primary/30 text-primary text-xs font-semibold uppercase tracking-widest">
             В чём ваша выгода
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight max-w-2xl">
+          <h2 className="text-3xl font-bold mb-5 leading-tight whitespace-nowrap">
             Три причины выбрать Nexus AI
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed font-light">
