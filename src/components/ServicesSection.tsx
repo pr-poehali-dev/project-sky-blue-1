@@ -1,76 +1,64 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Layout, Palette, Code, Share2, Target, Search } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
-const services = [
+const benefits = [
   {
-    icon: Layout,
-    title: "Веб-дизайн",
+    icon: "Clock",
+    label: "Экономия времени",
+    title: "Вам не нужно общаться с сотнями ИТ-студий",
     description:
-      "Мы создаем сайты, которые не только визуально привлекательны, но и функциональны, удобны в использовании. В CodeCraft ваш бренд в центре внимания — мы обеспечиваем соответствие онлайн-присутствия целям и ценностям вашего бизнеса.",
+      "Мы уже отсеяли 90% некомпетентных команд. Получаете 2–3 проверенных варианта — и только финальный выбор за вами.",
   },
   {
-    icon: Palette,
-    title: "Графический дизайн",
+    icon: "ShieldCheck",
+    label: "Полная независимость",
+    title: "Мы не продаём свой софт",
     description:
-      "От логотипов до постов в соцсетях — мы создаем креативные графические решения, усиливающие ваш бренд. Наши дизайны уникальны и профессиональны, производя нужное впечатление на целевую аудиторию.",
+      "Наша задача — найти лучшее решение на рынке именно под вашу задачу. Нет скрытых комиссий, нет аффилированных вендоров.",
   },
   {
-    icon: Code,
-    title: "Веб-разработка",
+    icon: "Lock",
+    label: "Финансовый щит",
+    title: "Если вендор не выполнит KPI — деньги вернутся вам",
     description:
-      "Мы создаем технически надежные и перспективные сайты. Наша команда обеспечивает надежность, масштабируемость и скорость, помогая вашему бизнесу расти в цифровом пространстве.",
-  },
-  {
-    icon: Share2,
-    title: "Соцсети",
-    description:
-      "Сильное присутствие в социальных сетях сегодня решает многое. Мы поможем создать впечатление с помощью привлекательных визуалов и эффективных стратегий, чтобы ваш бренд оставался заметным.",
-  },
-  {
-    icon: Target,
-    title: "Результат",
-    description:
-      "В CodeCraft мы нацелены на успех. Наш подход всегда направлен на достижение измеримых результатов, способствующих росту вашего бизнеса. Вместе находим то, что действительно работает.",
-  },
-  {
-    icon: Search,
-    title: "SEO",
-    description:
-      "Видимость в поиске критически важна. Мы оптимизируем сайт с применением современных SEO-техник, чтобы вы были выше в Google и целевая аудитория легко вас находила.",
+      "Это жёсткое условие нашего эскроу-протокола. Оплата поступает подрядчику только после подтверждённого результата.",
   },
 ]
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 animate-pulse" />
-
-      <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mx-auto block w-fit">
-          Наша экспертиза
+    <section id="services" className="py-28 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-6xl">
+        <div className="mb-16">
+          <div className="inline-block mb-5 px-3 py-1 rounded-sm border border-primary/30 text-primary text-xs font-semibold uppercase tracking-widest">
+            В чём ваша выгода
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight max-w-2xl">
+            Три причины выбрать SafeAI
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed font-light">
+            Мы не просто подбираем ИИ-инструменты — мы берём на себя финансовый и операционный риск внедрения.
+          </p>
         </div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-balance">
-          В чем мы <span className="text-primary">сильны</span>
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed text-lg">
-          От концепции до запуска — мы трансформируем ваши цифровые амбиции в мощные онлайн-решения, приносящие результат.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <Card
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {benefits.map((item, index) => (
+            <div
               key={index}
-              className="group hover:border-primary transition-all duration-300 hover:shadow-xl hover:-translate-y-2 bg-background/50 backdrop-blur-sm"
+              className="group p-8 rounded-lg border border-border hover:border-primary/40 bg-card hover:bg-card/80 transition-all duration-300"
             >
-              <CardHeader>
-                <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-                  <service.icon className="h-6 w-6" />
-                </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
-              </CardContent>
-            </Card>
+              <div className="mb-6 w-11 h-11 rounded-md bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <Icon name={item.icon} size={20} />
+              </div>
+              <div className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">
+                {item.label}
+              </div>
+              <h3 className="text-lg font-bold text-foreground mb-3 leading-snug">
+                {item.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {item.description}
+              </p>
+            </div>
           ))}
         </div>
       </div>

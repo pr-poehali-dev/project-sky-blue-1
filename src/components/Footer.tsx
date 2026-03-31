@@ -1,75 +1,57 @@
-import { Github, Linkedin, Twitter } from "lucide-react"
-
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-muted/30 py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="border-t border-border py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">CodeCraft</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              2025 CodeCraft. Все права защищены.
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-6 h-6 rounded bg-primary flex items-center justify-center">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 2L14 5.5V10.5L8 14L2 10.5V5.5L8 2Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
+                  <path d="M8 6L10.5 7.5V10.5L8 12L5.5 10.5V7.5L8 6Z" fill="white"/>
+                </svg>
+              </div>
+              <span className="text-base font-bold text-foreground">SafeAI</span>
+            </div>
+            <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
+              Независимый консалтинг по внедрению ИИ с финансовой гарантией результата.
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4">Навигация</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  О нас
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Услуги
-                </a>
-              </li>
-              <li>
-                <a href="#portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Портфолио
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Контакты
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Мы в соцсетях</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
+          <div className="flex flex-col sm:flex-row gap-8">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">Навигация</div>
+              <ul className="space-y-2">
+                <li><a href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Как мы работаем</a></li>
+                <li><a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Гарантии</a></li>
+                <li><a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Кейсы</a></li>
+              </ul>
+            </div>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">Контакты</div>
+              <ul className="space-y-2">
+                <li>
+                  <a href="tel:89133993003" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                    +7 913 399-30-03
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-sm text-primary hover:text-primary/80 transition-colors font-medium">
+                    Записаться на аудит →
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-muted-foreground">
+            © 2025 SafeAI. Все права защищены.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            ИИ-внедрение с гарантией результата
+          </p>
         </div>
       </div>
     </footer>
