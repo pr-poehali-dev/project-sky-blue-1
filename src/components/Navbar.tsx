@@ -23,12 +23,12 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-18 py-4 items-center justify-between">
+        <div className="relative flex h-18 py-4 items-center justify-between">
           <a href="/" className="hover:opacity-80 transition-opacity">
             <Logo />
           </a>
 
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
             <a href="#process" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide">
               Как мы работаем
             </a>
