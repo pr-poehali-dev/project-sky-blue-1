@@ -26,14 +26,14 @@ const benefits = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-28 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
         <div className="mb-16">
           <div className="inline-block mb-5 px-3 py-1 rounded-sm border border-primary/30 text-primary text-xs font-semibold uppercase tracking-widest">
             В чём ваша выгода
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5 leading-tight max-w-2xl">
-            Три причины выбрать SafeAI
+            Три причины выбрать Nexus AI
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed font-light">
             Мы не просто подбираем ИИ-инструменты — мы берём на себя финансовый и операционный риск внедрения.

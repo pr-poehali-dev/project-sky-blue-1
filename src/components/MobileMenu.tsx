@@ -22,7 +22,7 @@ export function MobileMenu() {
       </SheetTrigger>
       <SheetContent side="right" className="w-[280px] sm:w-[350px] bg-background border-border">
         <SheetHeader>
-          <SheetTitle className="text-left text-foreground">SafeAI</SheetTitle>
+          <SheetTitle className="text-left text-foreground">Nexus AI</SheetTitle>
           <SheetDescription className="text-left text-muted-foreground">Навигация по сайту</SheetDescription>
         </SheetHeader>
         <nav className="flex flex-col gap-1 mt-8">

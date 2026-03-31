@@ -33,9 +33,9 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section id="process" className="py-28 px-4 sm:px-6 lg:px-8 bg-card/30 border-y border-border">
+    <section id="process" className="py-16 px-4 sm:px-6 lg:px-8 bg-card/30 border-y border-border">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <div className="inline-block mb-5 px-3 py-1 rounded-sm border border-primary/30 text-primary text-xs font-semibold uppercase tracking-widest">
             Процесс
           </div>

@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
@@ -21,7 +21,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container mx-auto max-w-5xl relative z-10 py-24">
+      <div className="container mx-auto max-w-5xl relative z-10 py-16">
         {/* Badge */}
         <div className="flex justify-center mb-10 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/8 text-primary text-sm font-medium tracking-wide">
