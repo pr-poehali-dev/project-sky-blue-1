@@ -9,7 +9,7 @@ export function MobileMenu() {
   const menuItems = [
     { href: "#process", label: "Как мы работаем" },
     { href: "#services", label: "Гарантии" },
-    { href: "#contact", label: "Кейсы" },
+    { href: "#cases", label: "Кейсы" },
   ]
 
   return (

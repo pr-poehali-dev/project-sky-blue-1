@@ -35,7 +35,7 @@ export function Navbar() {
             <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide">
               Гарантии
             </a>
-            <a href="#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide">
+            <a href="#cases" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors tracking-wide">
               Кейсы
             </a>
           </div>

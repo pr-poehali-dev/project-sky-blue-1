@@ -24,7 +24,7 @@ export function Footer() {
               <ul className="space-y-2">
                 <li><a href="#process" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Как мы работаем</a></li>
                 <li><a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Гарантии</a></li>
-                <li><a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Кейсы</a></li>
+                <li><a href="#cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Кейсы</a></li>
               </ul>
             </div>
             <div>
