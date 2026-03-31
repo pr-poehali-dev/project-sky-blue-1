@@ -32,14 +32,19 @@ export function ContactSection() {
           {/* Left — text */}
           <div>
             <div className="inline-block mb-5 px-3 py-1 rounded-sm border border-primary/30 text-primary text-xs font-semibold uppercase tracking-widest">
-              Бесплатный аудит
+              Экспресс-аудит
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Запишитесь на экспресс-аудит вашего бизнеса
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10 font-light">
-              Наш ИИ-архитектор свяжется с вами, чтобы определить, какие процессы можно автоматизировать в первую очередь.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6 font-light">
+              Наш ИИ-архитектор изучит ваши процессы и подготовит детальный отчёт с конкретными гипотезами для автоматизации.
             </p>
+
+            <div className="inline-flex items-baseline gap-2 mb-10 px-5 py-3 rounded-lg border border-primary/30 bg-primary/5">
+              <span className="text-3xl font-black text-foreground">50 000 ₽</span>
+              <span className="text-sm text-muted-foreground">стоимость аудита</span>
+            </div>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
@@ -56,8 +61,8 @@ export function ContactSection() {
                   <span className="text-sm font-bold">2</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground mb-1">30-минутный звонок</div>
-                  <div className="text-sm text-muted-foreground">Разберём ваши процессы и найдём точки роста</div>
+                  <div className="font-semibold text-foreground mb-1">15-минутный звонок</div>
+                  <div className="text-sm text-muted-foreground">Уточним задачи и согласуем формат работы</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -66,7 +71,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground mb-1">Получите аудит-отчёт</div>
-                  <div className="text-sm text-muted-foreground">Бесплатно. Без обязательств внедрять что-либо</div>
+                  <div className="text-sm text-muted-foreground">Конкретные рекомендации и список проверенных вендоров</div>
                 </div>
               </div>
             </div>
