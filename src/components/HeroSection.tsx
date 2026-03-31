@@ -66,7 +66,7 @@ export function HeroSection() {
         {/* Stats */}
         <div className="flex flex-wrap justify-center items-center gap-12 animate-fade-in-up animate-delay-300">
           <div className="text-center">
-            <div className="text-3xl font-bold text-foreground mb-1">200+</div>
+            <div className="text-3xl font-bold text-foreground mb-1">50+</div>
             <div className="text-sm text-muted-foreground">вендоров в базе</div>
           </div>
           <div className="w-px h-10 bg-border hidden sm:block" />
@@ -76,8 +76,8 @@ export function HeroSection() {
           </div>
           <div className="w-px h-10 bg-border hidden sm:block" />
           <div className="text-center">
-            <div className="text-3xl font-bold text-foreground mb-1">0 ₽</div>
-            <div className="text-sm text-muted-foreground">за аудит</div>
+            <div className="text-3xl font-bold text-foreground mb-1">50 000 ₽</div>
+            <div className="text-sm text-muted-foreground">стоимость аудита</div>
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href="tel:89133993003"
-              className="hidden md:inline-flex text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="hidden md:inline-flex text-sm font-bold text-foreground hover:text-primary transition-colors"
             >
               +7 913 399-30-03
             </a>

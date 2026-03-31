@@ -8,7 +8,7 @@ export function Logo({ className = "" }: { className?: string }) {
             <path d="M8 6L10.5 7.5V10.5L8 12L5.5 10.5V7.5L8 6Z" fill="white"/>
           </svg>
         </div>
-        <span className="text-xl font-bold tracking-tight text-foreground">SafeAI</span>
+        <span className="text-xl font-bold tracking-tight text-foreground">Nexus AI</span>
       </div>
     </div>
   )

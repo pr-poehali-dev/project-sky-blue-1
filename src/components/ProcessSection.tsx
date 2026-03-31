@@ -60,7 +60,7 @@ export function ProcessSection() {
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="text-5xl font-black text-muted/30 leading-none mb-4 select-none">
+                  <div className="text-5xl font-black text-primary/60 leading-none mb-4 select-none">
                     {step.number}
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3 leading-snug">

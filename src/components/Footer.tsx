@@ -11,7 +11,7 @@ export function Footer() {
                   <path d="M8 6L10.5 7.5V10.5L8 12L5.5 10.5V7.5L8 6Z" fill="white"/>
                 </svg>
               </div>
-              <span className="text-base font-bold text-foreground">SafeAI</span>
+              <span className="text-base font-bold text-foreground">Nexus AI</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
               Независимый консалтинг по внедрению ИИ с финансовой гарантией результата.
@@ -47,7 +47,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            © 2025 SafeAI. Все права защищены.
+            © 2025 Nexus AI. Все права защищены.
           </p>
           <p className="text-xs text-muted-foreground">
             ИИ-внедрение с гарантией результата
